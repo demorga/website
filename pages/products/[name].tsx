@@ -1,11 +1,11 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 
-const HomePage: NextPage = () => {
+const ProductDetailPage: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>Demorga | Home </title>
+        <title>Demorga | Product Detail Page </title>
         <meta name="description" content="Demorga's Website" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -13,10 +13,10 @@ const HomePage: NextPage = () => {
       <main>
         <h1>Website for Demorga will launch here 🚀</h1>
 
-        <p>Home</p>
+        <p>Product Details</p>
       </main>
     </div>
   );
 };
 
-export default HomePage;
+export default ProductDetailPage;
