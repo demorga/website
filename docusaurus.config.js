@@ -8,7 +8,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "Demorga",
   tagline: "A GitHub Organization Sandbox",
-  url: "#",
+  url: "https://demorga.github.io/website",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -35,10 +35,16 @@ const config = {
       }),
     ],
   ],
-
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     {
+      announcementBar: {
+        id: "disclaimer",
+        content: "This page is work in progress 🚧",
+        backgroundColor: "#fafbfc",
+        textColor: "#091E42",
+        isCloseable: false,
+      },
       colorMode: {
         defaultMode: "dark",
         disableSwitch: false,
@@ -58,11 +64,11 @@ const config = {
             label: "Docs",
           },
           { to: "/blog", label: "Blog", position: "right" },
-          // {
-          //   href: "https://github.com/facebook/docusaurus",
-          //   label: "GitHub",
-          //   position: "right",
-          // },
+          {
+            href: "https://github.com/demorga",
+            label: "GitHub",
+            position: "right",
+          },
         ],
       },
       footer: {
@@ -110,8 +116,8 @@ const config = {
         ],
         copyright: [
           `Copyright © ${new Date().getFullYear()} Demorga.`,
-          `Built with <a href="https://docusaurus.io/">Docusaurus</a>.`,
-          `Illustrations from <a href="https://undraw.co/illustrations">unDraw</a>.`,
+          `Built with <a target="_blank" rel="noopener noreferrer" href="https://docusaurus.io/">Docusaurus</a>.`,
+          `Illustrations from <a target="_blank" rel="noopener noreferrer" href="https://undraw.co/illustrations">unDraw</a>.`,
         ].join(" "),
       },
       prism: {
