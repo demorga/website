@@ -7,7 +7,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Demorga",
-  tagline: "...",
+  tagline: "A GitHub Organization Sandbox",
   url: "#",
   baseUrl: "/",
   onBrokenLinks: "throw",
@@ -46,10 +46,10 @@ const config = {
       },
       navbar: {
         title: "Demorga",
-        // logo: {
-        //   alt: "Demorga Logo",
-        //   src: "assets/logo.svg",
-        // },
+        logo: {
+          alt: "Demorga Logo",
+          src: "assets/logo.svg",
+        },
         items: [
           {
             type: "doc",
@@ -81,15 +81,15 @@ const config = {
             title: "Community",
             items: [
               {
-                label: "Unus",
+                label: "GitHub",
                 href: "#",
               },
               {
-                label: "Duo",
+                label: "Twitter",
                 href: "#",
               },
               {
-                label: "Tres",
+                label: "Discord",
                 href: "#",
               },
             ],
@@ -108,7 +108,11 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Demorga. Built with Docusaurus. Illustrations from unDraw.`,
+        copyright: [
+          `Copyright © ${new Date().getFullYear()} Demorga.`,
+          `Built with <a href="https://docusaurus.io/">Docusaurus</a>.`,
+          `Illustrations from <a href="https://undraw.co/illustrations">unDraw</a>.`,
+        ].join(" "),
       },
       prism: {
         theme: lightCodeTheme,
