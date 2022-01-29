@@ -108,7 +108,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Demorga. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Demorga. Built with Docusaurus. Illustrations from unDraw.`,
       },
       prism: {
         theme: lightCodeTheme,
